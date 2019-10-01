@@ -1,0 +1,241 @@
+/* GENERAL */
+
+body, p {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+
+/* HEADER */
+
+#header {
+  padding: 5px;
+  background: #2E7D32;
+  text-align: center;
+  font-size: 22px;
+}
+
+
+/* SLIDER */
+
+#slider {
+ height: auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.outer-slider {
+  width: 500px;
+  overflow: hidden;
+}
+
+.inner-slider {
+  display: flex;
+  position: relative;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  color: #000;
+  font-size: 3rem;
+  margin: 20px 0;
+}
+
+.slide p {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: 350px;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 12px #555;
+}
+
+.fas.fa-less-than, .fas.fa-greater-than {
+  font-size: 3rem;
+  cursor: pointer;
+  color: #2E7D32
+}
+
+.fas.fa-less-than {
+  margin-right: 10px;
+}
+
+.fas.fa-greater-than {
+  margin-left: 10px;
+}
+
+/* Map */
+
+#booking {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+#map {
+  width: 60%;
+  height: 550px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 12px #555;
+}
+
+i.fas.fa-map-pin {
+  font-size: 25px;
+  color: #E65100;
+  cursor: pointer;
+}
+
+#bikesStation {
+  display: none;
+  flex: 0 0 30%;
+  padding: 20px;
+  margin: 0px 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 12px #555;
+}
+
+#bikesStation h3 {
+  color: #E65100;
+}
+
+#bikesStation a {
+  display: none;
+  padding: 10px;
+  color: #000;
+  border: 1px solid #E65100;
+  width: 100px;
+  margin: 12px auto 12px auto;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#bikesStation a:hover {
+  background-color: #E65100;
+  color: #fff
+}
+
+.noBike {
+  font-size: 16px;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 10px;
+  color: #E65100;
+}
+
+#nameStation {
+  font-size: 20px;
+  color: #E65100;
+  font-weight: bold;
+  text-align: center;
+}
+
+.legendStation {
+  color: green;
+  text-align: center;
+}
+
+#signature {
+  position: relative;
+  display: none;
+  width: 100%;
+  margin: 20px auto;
+}
+
+#signature p {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#btnValider, #btnEffacer {
+  display: none;
+}
+
+#canvas {
+  display: block;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid #2E7D32;
+  border-radius: 10px;
+  color: #E65100;
+}
+
+.boutonsCanvas {
+  display: flex;
+}
+
+#time {
+  display: none;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  background-color: #E65100;
+}
+
+#timeLeft {
+  color: #000;
+}
+
+
+
+footer {
+  text-align: center;
+  background: #2E7D32;
+  color: #fff;
+  font-size: 1rem;
+  padding: 20px;
+}
+
+footer p {
+  padding: 0;
+  margin: 0;
+
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 992px) {
+  #booking {
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  #slide h1 {
+    font-size: 2rem;
+  }
+
+  .fas.fa-less-than, .fas.fa-greater-than {
+    font-size: 2rem;
+  }
+
+  #booking {
+    flex-direction: column;
+  }
+
+  #timeLeft {
+    font-size: 0.6rem;
+  }
+
+  .slide p {
+    font-size: 20px;
+  }
+
+  #map {
+    height: 300px;
+  }
+}

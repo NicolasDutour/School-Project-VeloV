@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+  <title>Vélo'V</title>
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/7695216b2d.js" crossorigin="anonymous"></script>
+
+  <!-- CSS Perso -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Font Roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <!-- MapBox -->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.0/mapbox-gl.css' rel='stylesheet' />
+
+  <!-- Meta Tag Open Graph -->
+  <meta property="og:title" content="velo'v" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.velov.nicolasdutour.com" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="Application de réservation de vélo" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="velo'v" />
+
+</head>
+
+<body>
+
+  <section id="header">
+    <h1>Vélo'v - Réservez votre vélo en toute simplicité</h1>
+  </section>
+
+  <section id="slider"></section>
+
+  <section id="booking">
+
+    <div id="map"></div>
+
+
+    <div id="bikesStation">
+
+      <div id="nameStation"></div>
+      <h1 class="legendStation"></h1>
+      <h3>Ville</h3>
+      <p class="cityStation"></p>
+      <h3>Adresse de la station</h3>
+      <p class="adressStreet"></p>
+      <h3>Places totales</h3>
+      <p class="totalPlaces"></p>
+      <h3>Places disponibles</h3>
+      <p class="availableStands"></p>
+      <h3>Vélos disponibles</h3>
+      <p class="bikesAvailable"></p>
+      <a id="btnBooking">Réserver</a>
+      <div class="noBike"></div>
+
+      <div id="signature">
+        <p>Veuillez signer ci-dessous</p>
+        <canvas id="canvas" width="280" height="110"></canvas>
+        <div class="boutonsCanvas">
+          <a id="btnEffacer">Effacer</a>
+          <a id="btnValider">Valider</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="time">
+    <div id="timeLeft"></div>
+  </section>
+
+  <footer>
+    <p id="auteur"></p>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
+  <script src="js/ajax.js"></script>
+  <script src="js/Slider.js"></script>
+  <script src="js/Map.js"></script>
+  <script src="js/Station.js"></script>
+  <script src="js/Signature.js"></script>
+  <script src="js/Timer.js"></script>
+  <script src="js/Reservation.js"></script>
+  <script src="js/App.js"></script>
+  <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
